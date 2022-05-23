@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <title>Каталог</title>
     </head>
+
     <body>
       <header class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" alt="логотип города Седона" src="#">
+            <img class="page-header-logo" src="#" alt="логотип города Седона">
             </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
-
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
             </li>
-
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
@@ -30,13 +29,11 @@
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-
             <li class="navigation-item">
               <button class="buton" type="submit" value="">Хочу сюда!</button>
             </li>
@@ -50,7 +47,10 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <img class="home-pic" alt="Главная" src="">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 0L0 5.80006V12.0001H12V5.80006L6 0ZM11 11.0001H1V6.20005L6 1.4L11 6.20005V11.0001Z" fill="black"/>
+                  <path d="M4 10.0001H5V7.50005H7V10.0001H8V6.50005H4V10.0001Z" fill="black"/>
+                  </svg>
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -72,14 +72,12 @@
                   Бассейн
                  </label>
                 </li>
-
                 <li class="catalog-filter-item">
                  <label class="control">
                   <input class="control-input" type="checkbox" name="parking" checked>
                   Парковка
                  </label>
                 </li>
-
                 <li class="catalog-filter-item">
                  <label class="control">
                   <input class="control-input" type="checkbox" name="wifi">
@@ -98,14 +96,12 @@
                     Гостиница
                   </label>
                 </li>
-
                 <li class="hotels-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="staying-group" value="motel">
                     Мотель
                   </label>
                 </li>
-
                 <li class="hotels-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="staying-group" value="apartament">
@@ -117,11 +113,7 @@
 
             <button class="button button-blue" type="submit">Применить</button>
             <button class="button button-reset" type="reset">Сбросить</button>
-
         </form>
-
-
-
 
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярное</option>
@@ -129,24 +121,25 @@
         <option value="expensive">Сначала дорогое</option>
       </select>
 
-      <a class="button button-icon" href="#">
+      <div class="list-button-icon">
+        <button class="button button-icon" type="button">
         <span class="visually-hidden">Показать карточки</span>
-      </a>
-
-      <a class="button button-icon" href="#">
+        </button>
+        <button class="button button-icon" type="button">
         <span class="visually-hidden">Слайдшоу</span>
-      </a>
-
-      <a class="button button-icon" href="#">
+        </button>
+        <button class="button button-icon" type="button">
         <span class="visually-hidden">Показать список</span>
-      </a>
+        </button>
+      </div>
 
-      <h3 class="hotels=found">Найдено гостиниц: 38</h3>
+      <h3 class="hotels-found">Найдено гостиниц:
+        <span class="hotels-found-number">38</span>
+      </h3>
 
       <ul class="hotels-list">
-
         <li class="hotel-card">
-          <a class="hotel-card-link" href="">
+          <a class="hotel-card-link" href="amara.html">
             <img class="hotel-card-image" src="" alt="Гостиница Amara Resort & Spa">
             <h4 class="hotel-card-title">Amara Resort & Spa</h4>
           </a>
@@ -156,9 +149,8 @@
           <a class="hotel-card-button button-blue" href="">В избранное</a>
           <span class="hotel-rating">Рейтинг: 8,5</span>
         </li>
-
         <li class="hotel-card">
-          <a class="hotel-card-link" href="">
+          <a class="hotel-card-link" href="poco.html">
             <img class="hotel-card-image" src="" alt="Гостиница Villas at Poco Diablo">
             <h4 class="hotel-card-title">Villas at Poco Diablo</h4>
           </a>
@@ -168,9 +160,8 @@
           <a class="hotel-card-button button-green" href="">В избранном</a>
           <span class="hotel-rating">Рейтинг: 9,2</span>
         </li>
-
         <li class="hotel-card">
-          <a class="hotel-card-link" href="">
+          <a class="hotel-card-link" href="desert.html">
             <img class="hotel-card-image" src="" alt="гостиница Desert Quail Inn">
             <h4 class="hotel-card-title">Desert Quail Inn</h4>
           </a>
@@ -180,9 +171,8 @@
           <a class="hotel-card-button button-blue" href="">В избранное</a>
           <span class="hotel-rating">Рейтинг: 6,9</span>
         </li>
-
         <li class="hotel-card">
-          <a class="hotel-card-link" href="">
+          <a class="hotel-card-link" href="greentree.html">
             <img class="hotel-card-image" src="" alt="гостиница GreenTree Inn">
             <h4 class="hotel-card-title">GreenTree Inn</h4>
           </a>
@@ -213,11 +203,10 @@
         <li class="pagination-item">
           <a class="pagination-link" href="">10</a>
         </li>
-
       </ul>
-      <span class="hotels-page">Гостиниц на странице:</span>
+      <p class="hotels-page">Гостиниц на странице:
       <span class="hotels-page-number">4</span>
-
+      </p>
      </section>
 
      <section class="subscribe">
@@ -226,29 +215,24 @@
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
         <button class="button subscribe-button" type="submit">Подписаться</button>
-        </form>
-
+      </form>
      </section>
-
     </main>
 
-
-      <footer class="page-footer">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
            <li class="footer-social-item">
              <a class="button" href="https://vk.com/htmlacademy">
                <span class="visually-hidden">Vkontakte</span>
              </a>
            </li>
-
            <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
-
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
@@ -263,13 +247,11 @@
         </section>
 
           <section class="footer-logo">
-            <h5 class="visually-hidden">HTML Academy</h5>
+            <b class="visually-hidden">HTML Academy</b>
             <a class="html-logo-link" href="https://htmlacademy.ru/">
             <img class="html-logo" src=""  alt="логотип HTML Академии">
             </a>
-            </section>
-      </footer>
-
+          </section>
+     </footer>
     </body>
-
     </html>
