@@ -27,4 +27,178 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: inherit;
+  text-decoration: none;
+  whidth: 1200px;
+  height: 65px;
+  vertical-align: top;
+}
+
+.button {
+  text-align: center;
+  text-transform: uppercase;
+  corner-radius: 4px;
+}
+
+.button-basic {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  background-color: #756157;
+  width: 160px;
+  height: 37px;
+  border: none;
+}
+
+/* Как ее сделать посередине*/
+.main-picture {
+
+text-align: center;
+}
+
+.advantages {
+text-align: center;
+}
+
+.advantages-block {
+whidth: 1200px;
+height: 282px;
+vertical-align: top;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.background-blue {
+  color: white;
+  background-color: #82B3D3;
+  whidth: 400px;
+  height: 384px;
+}
+
+.advantages-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-living {
+ background-color: rgba(131, 179, 211, 0.12);
+
+}
+
+.advantages-text-black {
+  color: #333333;
+  background-color:#FFFFFF;
+}
+
+.search {
+  width: 1200px;
+  height: 417px;
+  text-align: center;
+}
+
+.search-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color:#FFFFFF;
+}
+
+.button-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: white;
+  background-color: #756157;
+  width: 574px;
+  height: 60px;
+  border: none;
+}
+
+.subscribe {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 94px;
+  background-color: #2F434C;
+  background-image: url("/images/background-subscribe.jpg");
+  width: 1200px;
+  height: 411px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.subscribe-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  padding-top: 29px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-form {
+  padding-top: 46px;
+}
+
+.field {
+  color: #000000;
+  background-color: #F2F2F2;
+  width: 600px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+}
+
+.subscribe-button {
+  padding-left: 0px;
+  font-style: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  width: 200px;
+  height: 60px;
+}
+
+.page-footer {
+width: 1200px;
+height: 120px;
+}
+
+.footer-social-item a {
+  text-decoration: none;
+}
+
+.footer-contacts-phone {
+  text-decoration: none;
+  font-size: 40px;
+line-height: 40px;
+text-align: center;
+color: #000000;
+background-color: #FFFFFF;
 }
