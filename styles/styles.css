@@ -257,8 +257,8 @@ body {
 }
 
 .select-control {
-color: #333333;
-background-color: #ffffff;
+  color: #333333;
+  background-color: #ffffff;
 }
 
 .hotel-card-title {
@@ -271,8 +271,8 @@ background-color: #ffffff;
 }
 
 .hotel-card-link {
- text-decoration: none;
-  }
+  text-decoration: none;
+}
 
 .hotel-card-name,
 .hotel-card-price {
@@ -302,4 +302,34 @@ background-color: #ffffff;
   color: white;
   background-color: #7DB54F;
   border: none;
+}
+
+.hotel-rating {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #F2F2F2;
+  width: 140px;
+  height: 37px;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.hotels-page,
+.hotels-page-number {
+  color: #333333;
 }
