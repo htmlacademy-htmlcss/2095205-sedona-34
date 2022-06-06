@@ -53,10 +53,13 @@
     </nav>
   </header>
 
-  <main class="main-index">
-    <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-    <img class="main-picture" src="/images/welcome.jpg" width="1200" height="767"
-      alt="Добро пожаловать в восхитительную Седону! Потому что Большой Каньон-отстой! ">
+  <main class="main-container main-index">
+    <div class="page-container">
+    <div class="index-picture">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <img class="main-picture" src="/images/index-text.svg" width="458" height="352"
+        alt="Добро пожаловать в восхитительную Седону! Потому что Большой Каньон-отстой! ">
+    </div>
 
     <section class="advantages">
       <div class="advantages-block">
@@ -64,8 +67,8 @@
         <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
       <ol class="advantages-list">
-        <li class="advantages-item">
-          <div class="background-blue">
+        <li class="advantages-items">
+          <div class="advantages-item background-blue">
             <h3 class="advantages-subtitle advantages-subtitle-white">Настоящий городок</h3>
             <span class="number number-white">-№ 1-</span>
             <p class="advantages-text advantages-text-white">Седона — не аттракцион для туристов, там течёт своя жизнь
@@ -73,19 +76,21 @@
             <img class="sedona-picture" src="/images/reason-1.jpg" width="800" height="384" alt="Седона">
           </div>
           <div class="advantages-subtitle-description">
-            <div class="advantages-living">
+            <div class="advantages-item advantages-living">
               <h4 class="advantages-subtitle advantages-subtitle-name">Жильё</h4>
               <p class="advantages-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
+            <div class="advantages-item advantages-food">
             <h4 class="advantages-subtitle advantages-subtitle-name">Еда</h4>
             <p class="advantages-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            <div class="advantages-souvenirs">
+            </div>
+            <div class="advantages-item advantages-souvenirs">
               <h4 class="advantages-subtitle advantages-subtitle-name">Сувениры</h4>
               <p class="advantages-text">Не только китайского, но и настоящего местного производства!</p>
             </div>
           </div>
 
-          <div class="background-blue">
+          <div class="advantages-item background-blue">
             <h3 class="advantages-subtitle advantages-subtitle-white">Там есть мост дьявола</h3>
             <span class="number number-white">-№ 2-</span>
             <p class="advantages-text advantages-text-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -93,22 +98,24 @@
             <img class="bridge-picture" src="/images/reason-2.jpg" width="800" height="384" alt="Мост дьявола">
           </div>
 
-          <div class="advantages-square">
+          <div class="advantages-subtitle-description">
+            <div class="advantages-item advantages-square">
             <h3 class="advantages-subtitle advantages-subtitle-black">Небольшая площадь</h3>
             <span class="number number-black">-№ 3-</span>
             <p class="advantages-text advantages-text-black">Все достопримечательности находятся очень близко</p>
           </div>
 
-          <div class="advantages-road">
+          <div class="advantages-item advantages-road">
             <h3 class="advantages-subtitle advantages-subtitle-black">Красивая дорога</h3>
             <span class="number number-black">-№ 4-</span>
             <p class="advantages-text advantages-text-black">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
 
-          <div class="advantages-tourists">
+          <div class="advantages-item advantages-tourists">
             <h3 class="advantages-subtitle advantages-subtitle-black">Мало туристов</h3>
             <span class="number number-black">-№ 5-</span>
             <p class="advantages-text advantages-text-black">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
           </div>
         </li>
       </ol>
@@ -167,6 +174,7 @@
       </a>
     </section>
   </footer>
+</div>
 </body>
 
 </html>
