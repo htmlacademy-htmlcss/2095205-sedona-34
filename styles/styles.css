@@ -22,7 +22,6 @@
 
 html {
   height: 100%;
-  box-sizing: border-box;
 }
 
 .block {
@@ -81,11 +80,6 @@ body {
   margin-left: auto;
   padding: 20px 0;
 
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .navigation-link {
@@ -297,13 +291,6 @@ body {
 .page-footer {
   min-width: 1200px;
   min-height: 120px;
-}
-
-.page-footer-container {
-  display: flex;
-  max-width: 1200px;
-  max-height: 120px;
-  margin: 0 auto;
 }
 
 .footer-social {
