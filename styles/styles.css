@@ -22,6 +22,7 @@
 
 html {
   height: 100%;
+  box-sizing: border-box;
 }
 
 .block {
@@ -156,15 +157,20 @@ body {
 }
 
 .background-blue {
-  display: flex;
   color: white;
   background-color: #82B3D3;
-  min-width: 1199px;
-  min-height: 384px;
+  min-width: 400px;
+  max-height: 384px;
 }
 
-.background-blue-reverse {
-  flex-direction: row-reverse;
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 800px;
+}
+
+.grid-container-reverse {
+  display: grid;
+  grid-template-columns: 800px 400px;
 }
 
 .advantages-subtitle {
@@ -292,6 +298,7 @@ body {
   min-width: 1200px;
   min-height: 120px;
 }
+
 
 .footer-social {
   max-width: 140px;
