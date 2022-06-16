@@ -131,7 +131,8 @@ body {
 }
 
 .index-picture {
-  background-image: url("/images/index-background.jpg");
+  background-image: url("../images/index-background.jpg");
+  padding-top: 51px;
   min-width: 1200px;
   min-height: 485px;
   background-size: 100% auto;
@@ -147,9 +148,6 @@ body {
 }
 
 .advantages-block {
-  min-width: 1200px;
-  min-height: 282px;
-  vertical-align: top;
   padding: 63px 90px;
 }
 
@@ -272,7 +270,7 @@ body {
   text-align: center;
   padding-top: 94px;
   background-color: #2F434C;
-  background-image: url("/images/background-subscribe.jpg");
+  background-image: url("../images/background-subscribe.jpg");
   min-width: 1200px;
   min-height: 411px;
   background-size: 100% auto;
@@ -401,7 +399,7 @@ body {
   padding: 35px, 70px, 70px, 70px;
   color: #ffffff;
   background-color: #000000;
-  background-image: url("/images/hotels/background-hotel-page.jpg");
+  background-image: url("../images/hotels/background-hotel-page.jpg");
   min-height: 403px;
   background-size: 100% auto;
   background-repeat: no-repeat;
