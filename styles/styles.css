@@ -326,6 +326,8 @@ body {
 
 .page-footer-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-width: 1200px;
   margin: 0 auto;
   padding: 45px 0px;
@@ -363,7 +365,6 @@ body {
 
 .footer-contacts-phone {
   display: block;
-  margin-left: 253px;
   text-decoration: none;
   font-size: 40px;
   line-height: 1;
