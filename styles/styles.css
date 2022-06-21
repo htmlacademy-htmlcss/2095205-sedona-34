@@ -221,8 +221,13 @@ body {
   color: #333333;
 }
 
+.advantages-image {
+  max-height: 384px;
+}
+
 .advantages-image-bridge {
   order: -1;
+  max-height: 384px;
 }
 
 .advantages-list {
