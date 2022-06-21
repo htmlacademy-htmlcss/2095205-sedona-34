@@ -426,13 +426,30 @@ body {
 .hotels-catalog {
   margin: 0;
   padding: 0;
-  margin: 0px 70px 70px 70px;
+  margin-bottom: 70px;
+  justify-content: space-between;
+
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   padding-top: 10px;
   padding-left: 110px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.hotels-filter-item:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.buttons-inner-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .button-blue {
@@ -443,13 +460,20 @@ body {
   min-width: 160px;
   min-height: 48px;
   border: none;
+
+}
+
+.button-apply {
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .button-reset {
   font-size: 16px;
   line-height: 1.25;
   color: #FFFFFF;
-  background-color: #000000;
+  background: none;
+  border: none;
   text-transform: capitalize;
 }
 
@@ -506,16 +530,27 @@ body {
 
 .hotel-card {
   display: grid;
-  align-items: center;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: repeat(5, auto);
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.hotel-card-image {
+  grid-column: 1/-1;
 }
 
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.16;
   color: #000000;
   background-color: #ffffff;
-
+  margin: 0;
+  padding: 0;
+  grid-column: 1/-1;
+  min-width: 300px;
 }
 
 .hotel-card-link {
@@ -528,10 +563,22 @@ body {
   background-color: #ffffff;
 }
 
+.hotel-card-name {
+  grid-column: 1/2;
+}
+
+.hotel-card-price {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 .hotel-card-button {
+  display: flex;
   min-width: 140px;
   min-height: 37px;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .hotel-card-blue {
@@ -553,12 +600,16 @@ body {
 }
 
 .hotel-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 1.25;
   color: #333333;
   background-color: #F2F2F2;
   min-width: 140px;
   min-height: 37px;
+  grid-column: 2/-1;
 }
 
 .pagination-link {
