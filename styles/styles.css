@@ -127,13 +127,12 @@ body {
   display: block;
   margin: 0 auto;
   padding: 0;
-  margin: 51px 371px 25px;
   background-position: 0 0;
 }
 
 .index-picture {
   background-image: url("../images/index-background.jpg");
-  padding-top: 5px;
+  padding-top: 51px;
   min-width: 1200px;
   min-height: 485px;
   background-size: 100% auto;
