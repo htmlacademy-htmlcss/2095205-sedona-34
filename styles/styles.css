@@ -404,7 +404,7 @@ body {
   background-color: #000000;
   background-image: url("../images/hotels/background-hotel-page.jpg");
   min-height: 403px;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
