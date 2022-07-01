@@ -685,6 +685,7 @@ body {
 
 .range-form {
   display: grid;
+  align-items: center;
   column-gap: 70px;
   max-width: 520px;
   grid-template-columns: repeat(2, 1fr);
@@ -701,6 +702,11 @@ body {
 .range-wrapper-inputs {
   grid-row: 2;
   grid-column: 1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 2px solid #FFFFFF;
+  margin-bottom: 32px;
+  width: 287px;
 }
 
 .range-bar {
@@ -711,6 +717,7 @@ body {
 
 .button-apply {
   margin-bottom: 20px;
+  margin-top: 55px;
   grid-row: 2;
   grid-column: 2;
 }
@@ -722,7 +729,7 @@ body {
   background: none;
   border: none;
   text-transform: capitalize;
-  grid-row: 3;
+  grid-row: -1;
   grid-column: 2;
 }
 
@@ -731,7 +738,7 @@ body {
   width: 20px;
   height: 20px;
   background: #ffffff;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 5px;
 }
 
@@ -757,25 +764,32 @@ body {
   border-radius: 4px;
 }
 
-.range-wrapper-inputs {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid #FFFFFF;
-}
-
 .catalog-filter-label {
   display: flex;
-  margin-right: 5px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.3);
+  padding-right: 14px;
+}
+
+.catalog-filter-label-min {
+border-right: 1px solid #ffffff;
+margin: 0;
+padding-right: 10px;
 }
 
 .range-input {
-  width: 30px;
+  height: 48px;
+  font-family: inherit;
+  color: white;
+  display: block;
+  max-width: 287px;
   padding: 0 2px;
   font: inherit;
-  text-align: center;
   background-color: transparent;
   border: none;
   appearance: textfield;
+  width: 100%;
+ padding-left: 19px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1070,4 +1084,90 @@ body {
 
 .hotels-page {
   margin-left: auto;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  padding-top: 62px;
+  background-color: #ffffff;
+}
+
+.modal-search {
+  width: 715px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  border-color: #F2F2F2;
+  border-radius: 50%;
+  background-image: url("../images/Close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 119px 133px 54px 133px;
+  grid-template-rows: repeat(4, 575px);
+  gap: 20px 20px;
+}
+
+/* .field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+} */
+
+.check-in {
+  grid-column: 1/2;
+  grid-row: 1;
+  justify-self: start;
+}
+
+.field-check-in {
+  display: block;
+  grid-row: 1;
+  grid-column: 2/-1;
+  justify-self: end;
+}
+
+.check-out {
+  grid-column: 1/2;
+  grid-row: 2;
+  justify-self: start;
+}
+
+.check-out-date {
+  grid-row: 2;
+  grid-column: 2/-1;
+  justify-self: end;
 }
