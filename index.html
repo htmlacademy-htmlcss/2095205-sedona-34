@@ -220,30 +220,54 @@
           <p class="field-group check-in-form-date">
             <label class="form-label check-in" for="check-in-date">
               Дата заезда:</label>
-            <input class="field field-check-in" type="text" id="check-in-date" name="check-in-date" placeholder="27 апреля 2020">
+              <div class="calendar-search">
+            <input class="field-search field-check-in" type="text" id="check-in-date" name="check-in-date" placeholder="27 апреля 2020">
+            <button class="calendar visually-hidden" type="button" value="">Выбрать дату</button>
           </p>
+          </div>
 
           <p class="field-group check-out-form">
             <label class="form-label check-out" for="check-out-date">
               Дата выезда:</label>
-            <input class="field" type="text" id="check-out-date" name="check-out-date" placeholder="1 сентября 2021">
-          </p>
+              <div class="calendar-search">
+            <input class="field-search field-check-out" type="text" id="check-out-date" name="check-out-date" placeholder="1 сентября 2021">
+            <button class="calendar visually-hidden" type="button" value="">Выбрать дату</button>
+            </div>
 
           <p class="field-group adults-form-">
-            <label class="form-label" for="adults-form">
+            <label class="form-label adults" for="adults-form">
               Взрослые:
             </label>
-            <input class="field" type="text" id="adults" name="adults"
+            <div class="person-choose">
+              <button class="adults-button" type="button" value="">+</button>
+            <input class="field-search field-adults" type="text" id="adults" name="adults"
               placeholder="2">
+              <button class="adults-button adult-button-minus" type="button" value="">-</button>
+              </div>
           </p>
 
           <p class="field-group children-form">
-            <label class="form-label" for="children">
+            <span class="form-label">
+            <label class="form-label children" for="children">
               Дети:
             </label>
-            <input class="field" type="text" id="children" name="children" placeholder="1">
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <svg class="tooltip-icon" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
+                  <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" fill="#fff"/>
+                </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+          </span>
+            <div class="person-choose">
+              <button class="children-button" type="button" value="">+</button>
+            <input class="field-search field-children" type="text" id="children" name="children" placeholder="1">
+            <button class="children-button adult-button-minus" type="button" value="">-</button>
           </p>
           <button class="button button-blue button-search-form " type="submit">Найти</button>
+        </p>
         </form>
       </div>
 
