@@ -1178,6 +1178,7 @@ body {
 
 .button-search-form {
   width: 575px;
+  border-radius: 10px;
 }
 
 .form-label {
@@ -1296,13 +1297,15 @@ body {
   color: #333333;
 }
 
-.check-in-form-date, .check-out-form {
+.check-in-form-date,
+.check-out-form {
   display: grid;
   align-items: center;
   column-gap: 42px;
   row-gap: 10px;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
+  margin-bottom: 11px;
 }
 
 .person-quantity {
@@ -1310,9 +1313,10 @@ body {
   margin-bottom: 25px;
 }
 
-.adults-form, .children-form {
+.adults-form,
+.children-form {
   display: flex;
-  align-items:center;
+  align-items: center;
   margin: 0;
 }
 
@@ -1336,16 +1340,19 @@ body {
   cursor: pointer;
 }
 
+
 .tooltip-toggle::after {
   content: attr(data-text);
   position: absolute;
-  top: calc(100% + 25px);
+  top: calc(100% + 10px);
+  left: -85px;
   background-color: #333333;
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
   font-weight: normal;
   text-transform: none;
+  text-align: left;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
   display: block;
@@ -1355,7 +1362,24 @@ body {
   transition: opacity 0.135s ease-in-out;
 }
 
-.tooltip-toggle:hover::after {
+.tooltip-toggle::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 9.5px 9px 9.5px;
+  border-color: transparent transparent #333333 transparent;
+  background-color: #333333;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.135s ease-in-out;
+}
+
+.tooltip-toggle:hover::after,
+.tooltip-toggle:hover::before {
   opacity: 1;
   visibility: visible;
 }
