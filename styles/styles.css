@@ -772,9 +772,9 @@ body {
 }
 
 .catalog-filter-label-min {
-border-right: 1px solid #ffffff;
-margin: 0;
-padding-right: 10px;
+  border-right: 1px solid #ffffff;
+  margin: 0;
+  padding-right: 10px;
 }
 
 .range-input {
@@ -789,7 +789,7 @@ padding-right: 10px;
   border: none;
   appearance: textfield;
   width: 100%;
- padding-left: 19px;
+  padding-left: 19px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1141,15 +1141,18 @@ padding-right: 10px;
 
 .check-in {
   margin-right: 42px;
+  position: relative;
 }
 
 .check-out {
   margin-right: 36px;
+  position: relative;
 }
 
 .field-check-in,
 .field-check-out {
-  min-width: 420px;;
+  min-width: 420px;
+  ;
 }
 
 .field-group {
@@ -1208,11 +1211,10 @@ padding-right: 10px;
   background-image: url(../images/calendar.svg);
   width: 20px;
   height: 20px;
-  background-position: absolute;
   display: block;
 }
 
-.adults-choose {
+.person-choose {
   display: flex;
   max-width: 133px;
   height: 50px;
@@ -1226,8 +1228,23 @@ padding-right: 10px;
   margin: 0;
 }
 
-.adults-button-minus {
-margin-right: 56px;
+.adults-button-plus {
+  padding: 0;
+  margin: 0;
+  margin-right: 56px;
+}
+
+.children-button {
+  border: none;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.children-button-minus {
+  padding: 0;
+  margin: 0;
+  margin-right: 56px;
 }
 
 .tooltip-toggle {
@@ -1245,7 +1262,7 @@ margin-right: 56px;
 }
 
 .tooltip-text {
-background-color: #333333;
+  background-color: #333333;
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
@@ -1261,4 +1278,19 @@ background-color: #333333;
   position: absolute;
   margin-top: 4px;
   margin-left: 2px;
+}
+
+.tooltip-text-check-in,
+.tooltip-text-check-out {
+  position: absolute;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.tooltip-text-check-in {
+  color: #FF5757;
+}
+
+.tooltip-text-check-out {
+  color: #333333;
 }
