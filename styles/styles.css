@@ -694,6 +694,10 @@ body {
   border: none;
 }
 
+.range-bar {
+  width: 197px;
+}
+
 .range-form {
   display: grid;
   align-items: center;
