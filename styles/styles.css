@@ -29,6 +29,13 @@ html {
   box-sizing: content-box;
 }
 
+.wrapper-container {
+  background-color: #ffffff;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -38,7 +45,7 @@ body {
   font-size: 18px;
   line-height: 1.25;
   color: #000000;
-  background-color: #FFFFFF
+  background-color: #E5E5E5;
 }
 
 .visually-hidden {
@@ -1379,4 +1386,8 @@ body {
 .tooltip-toggle:hover::before {
   opacity: 1;
   visibility: visible;
+}
+
+.modal-container-close {
+  display: none;
 }
