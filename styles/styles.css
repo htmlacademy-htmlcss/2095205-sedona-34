@@ -237,6 +237,10 @@ body {
   max-height: 384px;
 }
 
+.advantages-color-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .button-blue {
   font-size: 16px;
   line-height: 1.25;
@@ -638,7 +642,7 @@ body {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked+.control-mark::after {
   content: "";
   position: absolute;
   background-image: url("../images/checkmark.svg");
@@ -659,7 +663,7 @@ body {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-radio::after {
+.control-input[type="radio"]:checked+.control-radio::after {
   content: "";
   position: absolute;
   background-image: url("../images/ellipse-radio.svg");
@@ -724,7 +728,7 @@ body {
 }
 
 .button-apply {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   margin-bottom: 20px;
   margin-top: 55px;
